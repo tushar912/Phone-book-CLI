@@ -4,10 +4,10 @@ const path = require('path');
 const contactlocation = path.join(__dirname,"contacts.json");
 
 const getContacts = ()=>{
-    const contacts = fs.readFileSync(contacts).toString();
+    const contacts = fs.readFileSync(contactlocation).toString();
     return JSON.parse(contacts);
 }
 const saveContacts= (contacts)=>{
-fs.readFileSync(contactlocation,JSON.stringify(contacts,null,2))
+fs.writeFileSync(contactlocation,JSON.stringify(contacts,null,2))
 }
-module.exports = {contactsLocation, getContacts, saveContacts};
+module.exports = {contactlocation, getContacts, saveContacts};

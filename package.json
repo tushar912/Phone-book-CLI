@@ -2,9 +2,14 @@
   "name": "phone-book-cli",
   "version": "1.0.0",
   "description": "Built Using node-js",
-  "main": "index.js",
+  "main": "./bin/index.js",
+  "preferGlobal": true,
+  "bin": {
+    "phone-book-cli": "./bin/index.js" 
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node ./bin/index.js"
   },
   "repository": {
     "type": "git",
