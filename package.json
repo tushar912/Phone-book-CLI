@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/tushar912/Phone-book-CLI/issues"
   },
-  "homepage": "https://github.com/tushar912/Phone-book-CLI#readme"
+  "homepage": "https://github.com/tushar912/Phone-book-CLI#readme",
+  "dependencies": {
+    "commander": "^6.1.0",
+    "inquirer": "^7.3.3",
+    "mongoose": "^5.10.2"
+  }
 }
